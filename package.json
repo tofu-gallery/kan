@@ -59,5 +59,8 @@
       "@types/minimatch": "npm:minimatch@*",
       "@types/glob": "npm:@types/glob@^8.1.0"
     }
+  },
+  "dependencies": {
+    "next": "15.5.9"
   }
 }

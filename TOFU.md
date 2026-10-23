@@ -8,6 +8,8 @@ This repository is Tofu's copy of **kanbn/kan** (licence: AGPL-3.0), listed in T
 
 How Tofu runs it: Next.js + PostgreSQL. Tofu builds it on the Vercel lane; the managed database supplies DATABASE_URL.
 
+- `package.json` (root): declares `next` at the same version as `apps/web`, because Vercel reads the Next.js version from the repository root and the root is a pnpm workspace with no `next` of its own; without it the build stops with `NEXT_NO_VERSION`.
+
 ## What Tofu changes
 
 - `packages/db/src/client.ts`: the database client reads `DATABASE_URL` (Tofu's managed database) first and upstream's `POSTGRES_URL` second. With neither set it now throws `No database configured: set DATABASE_URL (or POSTGRES_URL) to a PostgreSQL connection string.` Before, it silently opened a PGlite database in `./pgdata`, which on a serverless host sits on temporary disk and loses every write.

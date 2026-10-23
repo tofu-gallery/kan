@@ -8,7 +8,9 @@ This repository is Tofu's copy of **kanbn/kan** (licence: AGPL-3.0), listed in T
 
 How Tofu runs it: Next.js + PostgreSQL. Tofu builds it on the Vercel lane; the managed database supplies DATABASE_URL.
 
-- `package.json` (root): declares `next` at the same version as `apps/web`, because Vercel reads the Next.js version from the repository root and the root is a pnpm workspace with no `next` of its own; without it the build stops with `NEXT_NO_VERSION`. `pnpm-lock.yaml` carries the matching importer entry.
+- `apps/web/next.config.js`: sets `turbopack.root` to the repository root, because the dependencies are hoisted there and Turbopack otherwise resolves from `apps/web` alone and cannot find `@lingui/core`, the react-email subpackages or `@aws-sdk/client-s3`.
+
+## What Tofu changes declares `next` at the same version as `apps/web`, because Vercel reads the Next.js version from the repository root and the root is a pnpm workspace with no `next` of its own; without it the build stops with `NEXT_NO_VERSION`. `pnpm-lock.yaml` carries the matching importer entry.
 
 ## What Tofu changes
 

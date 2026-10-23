@@ -59,6 +59,9 @@ const config = {
     })(),
   },
   turbopack: {
+    // Tofu: dependencies are hoisted to the repository root (pnpm node-linker=hoisted). Without this Turbopack
+    // resolves from apps/web alone and cannot find @lingui/core, the react-email subpackages or @aws-sdk/client-s3.
+    root: fileURLToPath(new URL("../..", import.meta.url)),
     rules: {
       "*.svg": {
         loaders: ["@svgr/webpack"],

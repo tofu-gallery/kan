@@ -1,6 +1,7 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "framework": "nextjs",
+  "installCommand": "NPM_CONFIG_NODE_LINKER=hoisted NPM_CONFIG_SHAMEFULLY_HOIST=true NPM_CONFIG_LINK_WORKSPACE_PACKAGES=true NPM_CONFIG_HOIST=true pnpm install",
   "buildCommand": "node tooling/tofu-migrate.mjs && pnpm --filter @kan/mcp build && pnpm --filter @kan/web build",
   "outputDirectory": "apps/web/.next"
 }

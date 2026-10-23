@@ -54,13 +54,13 @@ Nothing else changed: no upstream SQL and no `turbo.json`. The Stripe code path 
 
 - The build detects Next.js 15.5.9 and finds `apps/web/.next`.
 - `tooling/tofu-migrate.mjs` applied all 37 files to a fresh managed database: 31 app tables, every one with row-level security.
-- Email-and-password sign-up answers HTTP 200 and creates the account.
+- On the live address: sign up with email and password, create a workspace, a board with three lists and a card, sign in again in a new session and read the card back. Board and card search (`similarity()` from `pg_trgm`) finds both. The runtime logs show no `No database configured`, `SELF_SIGNED_CERT_IN_CHAIN` or prepared-statement errors from the transaction pooler.
+- A deploy after `NEXT_PUBLIC_BASE_URL` is set passes Tofu's check and goes online.
 
 Not checked yet:
 
-- Create a workspace, a board, a list and a card, then reload: the data is still there, and the runtime logs show no `No database configured`, `SELF_SIGNED_CERT_IN_CHAIN` or prepared-statement errors from the transaction pooler.
-- Board and card search (it calls `similarity()` from `pg_trgm`).
 - Google sign-in with `GOOGLE_CLIENT_ID`/`GOOGLE_CLIENT_SECRET` set.
+- Avatars and attachments, which need S3-compatible storage.
 
 ## Licence
 

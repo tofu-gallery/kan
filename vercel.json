@@ -1,6 +1,6 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "framework": "nextjs",
-  "buildCommand": "pnpm --filter @kan/web build",
+  "buildCommand": "node scripts/tofu-migrate.mjs && pnpm --filter @kan/mcp build && pnpm --filter @kan/web build",
   "outputDirectory": "apps/web/.next"
 }

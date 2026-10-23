@@ -10,6 +10,13 @@ const OAUTH_DISCOVERY_PATHS = new Set([
 ]);
 
 function resolveLoginUrl(request: NextRequest) {
+  // Tofu changed this: a request to a build's own *.vercel.app address is answered there. Tofu checks every new
+  // version at that address before putting it online, and a redirect to the public address would send the check to
+  // the version already online, so the new version would never go online.
+  if (request.nextUrl.hostname.endsWith(".vercel.app")) {
+    return new URL("/login", request.url);
+  }
+
   const publicBaseUrl = env("NEXT_PUBLIC_BASE_URL");
 
   if (publicBaseUrl?.length) {

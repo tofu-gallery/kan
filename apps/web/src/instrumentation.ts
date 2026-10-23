@@ -4,6 +4,10 @@
  * only this app's hosting and its owner hold, so sign-in works from the first deploy. A BETTER_AUTH_SECRET saved in
  * the app's settings replaces it. Changing from one to the other signs everybody out once, and Trello connections
  * saved before the change have to be made again (their tokens are encrypted with this secret).
+ *
+ * Because the derived secret follows DATABASE_URL, it changes with it: restoring the app's database into a new one,
+ * connecting a different database, or changing the database password (including after moving the database to your own
+ * Supabase organization) signs everybody out once too, and saved GitHub and Trello connections have to be made again.
  */
 export async function register() {
   if (process.env.NEXT_RUNTIME !== "nodejs") return;

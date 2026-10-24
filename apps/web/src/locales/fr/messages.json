@@ -554,7 +554,7 @@
     "message": "All systems operational",
     "placeholders": {},
     "comments": [],
-    "origin": [["src/views/home/components/Footer.tsx", 18]],
+    "origin": [["src/views/home/components/Footer.tsx", 19]],
     "translation": "Tous les systèmes sont opérationnels"
   },
   "EII/X8": {
@@ -582,7 +582,7 @@
     "comments": [],
     "origin": [
       ["src/pages/partner/activate.tsx", 96],
-      ["src/views/auth/signup/index.tsx", 90]
+      ["src/views/auth/signup/index.tsx", 94]
     ],
     "translation": "Vous avez déjà un compte ? <0><1>Se connecter</1></0>"
   },
@@ -679,7 +679,7 @@
     "message": "API Reference",
     "placeholders": {},
     "comments": [],
-    "origin": [["src/views/home/components/Footer.tsx", 31]],
+    "origin": [["src/views/home/components/Footer.tsx", 32]],
     "translation": "Référence API"
   },
   "bJZm1W": {
@@ -1518,8 +1518,8 @@
     "comments": [],
     "origin": [
       ["src/pages/partner/activate.tsx", 56],
-      ["src/views/auth/login/index.tsx", 43],
-      ["src/views/auth/signup/index.tsx", 71]
+      ["src/views/auth/login/index.tsx", 44],
+      ["src/views/auth/signup/index.tsx", 75]
     ],
     "translation": "Consultez votre boîte de réception"
   },
@@ -1603,8 +1603,8 @@
     },
     "comments": [],
     "origin": [
-      ["src/views/auth/login/index.tsx", 48],
-      ["src/views/auth/signup/index.tsx", 76]
+      ["src/views/auth/login/index.tsx", 49],
+      ["src/views/auth/signup/index.tsx", 80]
     ],
     "translation": "Cliquez sur le lien que nous avons envoyé à {magicLinkRecipient} pour vous connecter."
   },
@@ -1671,7 +1671,7 @@
     "message": "Company",
     "placeholders": {},
     "comments": [],
-    "origin": [["src/views/home/components/Footer.tsx", 95]],
+    "origin": [["src/views/home/components/Footer.tsx", 98]],
     "translation": "Entreprise"
   },
   "bD8I7O": {
@@ -1790,7 +1790,7 @@
     "placeholders": {},
     "comments": [],
     "origin": [
-      ["src/views/home/components/Footer.tsx", 38],
+      ["src/views/home/components/Footer.tsx", 41],
       ["src/views/home/components/Header.tsx", 42]
     ],
     "translation": "Contact"
@@ -2198,7 +2198,7 @@
     "message": "Dark",
     "placeholders": {},
     "comments": [],
-    "origin": [["src/components/UserMenu.tsx", 158]],
+    "origin": [["src/components/UserMenu.tsx", 159]],
     "translation": "Sombre"
   },
   "cp1rsD": {
@@ -2449,11 +2449,11 @@
     "placeholders": {},
     "comments": [],
     "origin": [
-      ["src/components/UserMenu.tsx", 209],
+      ["src/components/UserMenu.tsx", 210],
       ["src/views/boards/components/TemplateBoards.tsx", 24],
       ["src/views/boards/components/TemplateBoards.tsx", 30],
       ["src/views/boards/components/TemplateBoards.tsx", 36],
-      ["src/views/home/components/Footer.tsx", 78],
+      ["src/views/home/components/Footer.tsx", 81],
       ["src/views/home/components/Header.tsx", 36]
     ],
     "translation": "Documentation"
@@ -2462,7 +2462,7 @@
     "message": "Don't have an account? <0><1>Sign up</1></0>",
     "placeholders": {},
     "comments": [],
-    "origin": [["src/views/auth/login/index.tsx", 63]],
+    "origin": [["src/views/auth/login/index.tsx", 64]],
     "translation": "Vous n'avez pas de compte ? <0><1>Inscrivez-vous</1></0>"
   },
   "DPfwMq": {
@@ -3060,7 +3060,7 @@
     "comments": [],
     "origin": [
       ["src/views/home/components/Faqs.tsx", 143],
-      ["src/views/home/components/Footer.tsx", 52]
+      ["src/views/home/components/Footer.tsx", 55]
     ],
     "translation": "FAQ"
   },
@@ -3088,7 +3088,7 @@
     "comments": [],
     "origin": [
       ["src/views/home/components/Features.tsx", 132],
-      ["src/views/home/components/Footer.tsx", 50],
+      ["src/views/home/components/Footer.tsx", 53],
       ["src/views/home/components/Header.tsx", 17],
       ["src/views/home/components/Header.tsx", 33]
     ],
@@ -3100,7 +3100,7 @@
     "comments": [],
     "origin": [
       ["src/components/FeedbackModal.tsx", 59],
-      ["src/components/UserMenu.tsx", 217]
+      ["src/components/UserMenu.tsx", 232]
     ],
     "translation": "Commentaires"
   },
@@ -3227,7 +3227,7 @@
     "placeholders": {},
     "comments": [],
     "origin": [
-      ["src/views/auth/signup/index.tsx", 71],
+      ["src/views/auth/signup/index.tsx", 75],
       ["src/views/home/components/Cta.tsx", 61],
       ["src/views/home/components/Header.tsx", 106],
       ["src/views/pricing/components/PricingTiers.tsx", 29],
@@ -3286,7 +3286,7 @@
     "message": "Getting started",
     "placeholders": {},
     "comments": [],
-    "origin": [["src/views/home/components/Footer.tsx", 25]],
+    "origin": [["src/views/home/components/Footer.tsx", 26]],
     "translation": "Premiers pas"
   },
   "RkXlPZ": {
@@ -3294,7 +3294,7 @@
     "placeholders": {},
     "comments": [],
     "origin": [
-      ["src/views/home/components/Footer.tsx", 37],
+      ["src/views/home/components/Footer.tsx", 40],
       ["src/views/settings/IntegrationsSettings.tsx", 186]
     ],
     "translation": "GitHub"
@@ -3555,7 +3555,7 @@
     "message": "Importing from Trello",
     "placeholders": {},
     "comments": [],
-    "origin": [["src/views/home/components/Footer.tsx", 27]],
+    "origin": [["src/views/home/components/Footer.tsx", 28]],
     "translation": "Importation depuis Trello"
   },
   "g2xBxu": {
@@ -3858,14 +3858,14 @@
     "message": "Legal",
     "placeholders": {},
     "comments": [],
-    "origin": [["src/views/home/components/Footer.tsx", 131]],
+    "origin": [["src/views/home/components/Footer.tsx", 134]],
     "translation": "Mentions légales"
   },
   "iQmbPb": {
     "message": "License",
     "placeholders": {},
     "comments": [],
-    "origin": [["src/views/home/components/Footer.tsx", 45]],
+    "origin": [["src/views/home/components/Footer.tsx", 48]],
     "translation": "Licence"
   },
   "aDzbuM": {
@@ -3886,7 +3886,7 @@
     "message": "Light",
     "placeholders": {},
     "comments": [],
-    "origin": [["src/components/UserMenu.tsx", 172]],
+    "origin": [["src/components/UserMenu.tsx", 173]],
     "translation": "Clair"
   },
   "TCt/8K": {
@@ -3974,14 +3974,14 @@
     "message": "Login | kan.bn",
     "placeholders": {},
     "comments": [],
-    "origin": [["src/views/auth/login/index.tsx", 33]],
+    "origin": [["src/views/auth/login/index.tsx", 34]],
     "translation": "Connexion | kan.bn"
   },
   "nOhz3x": {
     "message": "Logout",
     "placeholders": {},
     "comments": [],
-    "origin": [["src/components/UserMenu.tsx", 227]],
+    "origin": [["src/components/UserMenu.tsx", 242]],
     "translation": "Déconnexion"
   },
   "vuxdLS": {
@@ -4591,7 +4591,7 @@
     "placeholders": {},
     "comments": [],
     "origin": [
-      ["src/views/home/components/Footer.tsx", 39],
+      ["src/views/home/components/Footer.tsx", 42],
       ["src/views/oss-friends/index.tsx", 52]
     ],
     "translation": "Amis OSS"
@@ -4976,7 +4976,7 @@
     "placeholders": {},
     "comments": [],
     "origin": [
-      ["src/views/home/components/Footer.tsx", 51],
+      ["src/views/home/components/Footer.tsx", 54],
       ["src/views/home/components/Header.tsx", 18],
       ["src/views/home/components/Header.tsx", 34],
       ["src/views/pricing/components/Pricing.tsx", 85],
@@ -5000,7 +5000,7 @@
     "message": "Privacy policy",
     "placeholders": {},
     "comments": [],
-    "origin": [["src/views/home/components/Footer.tsx", 43]],
+    "origin": [["src/views/home/components/Footer.tsx", 46]],
     "translation": "Politique de confidentialité"
   },
   "zwBp5t": {
@@ -5267,7 +5267,7 @@
     "message": "Resources",
     "placeholders": {},
     "comments": [],
-    "origin": [["src/views/home/components/Footer.tsx", 114]],
+    "origin": [["src/views/home/components/Footer.tsx", 117]],
     "translation": "Ressources"
   },
   "5k0NLb": {
@@ -5282,7 +5282,7 @@
     "placeholders": {},
     "comments": [],
     "origin": [
-      ["src/views/home/components/Footer.tsx", 36],
+      ["src/views/home/components/Footer.tsx", 37],
       ["src/views/home/components/Header.tsx", 13],
       ["src/views/home/components/Header.tsx", 28],
       ["src/views/onboarding/workspace-details/index.tsx", 178]
@@ -5625,7 +5625,7 @@
     "message": "Shortcuts",
     "placeholders": {},
     "comments": [],
-    "origin": [["src/components/UserMenu.tsx", 187]],
+    "origin": [["src/components/UserMenu.tsx", 188]],
     "translation": "Raccourcis"
   },
   "5lWFkC": {
@@ -5680,8 +5680,8 @@
     "placeholders": {},
     "comments": [],
     "origin": [
-      ["src/views/auth/signup/index.tsx", 36],
-      ["src/views/auth/signup/index.tsx", 61]
+      ["src/views/auth/signup/index.tsx", 37],
+      ["src/views/auth/signup/index.tsx", 65]
     ],
     "translation": "S'inscrire | kan.bn"
   },
@@ -5689,14 +5689,14 @@
     "message": "Sign up disabled",
     "placeholders": {},
     "comments": [],
-    "origin": [["src/views/auth/signup/index.tsx", 46]],
+    "origin": [["src/views/auth/signup/index.tsx", 47]],
     "translation": "Inscription désactivée"
   },
   "s6iE/c": {
     "message": "Sign up is currently disabled. Please try again later.",
     "placeholders": {},
     "comments": [],
-    "origin": [["src/views/auth/signup/index.tsx", 49]],
+    "origin": [["src/views/auth/signup/index.tsx", 50]],
     "translation": "L'inscription est actuellement désactivée. Veuillez réessayer plus tard."
   },
   "6FDocz": {
@@ -5780,6 +5780,16 @@
     "comments": [],
     "origin": [["src/components/Dashboard.tsx", 132]],
     "translation": "Une erreur s'est produite lors de l'activation de la licence."
+  },
+  "joolK7": {
+    "translation": "Code source",
+    "message": "Source code",
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      ["src/components/SourceCodeLink.tsx", 26],
+      ["src/components/UserMenu.tsx", 224]
+    ]
   },
   "vnS6Rf": {
     "message": "SSO",
@@ -5894,7 +5904,7 @@
     "placeholders": {},
     "comments": [],
     "origin": [
-      ["src/components/UserMenu.tsx", 198],
+      ["src/components/UserMenu.tsx", 199],
       ["src/views/pricing/components/FeatureComparisonTable.tsx", 295]
     ],
     "translation": "Support"
@@ -5910,7 +5920,7 @@
     "message": "System",
     "placeholders": {},
     "comments": [],
-    "origin": [["src/components/UserMenu.tsx", 144]],
+    "origin": [["src/components/UserMenu.tsx", 145]],
     "translation": "Système"
   },
   "KM6m8p": {
@@ -5996,7 +6006,7 @@
     "message": "Terms of service",
     "placeholders": {},
     "comments": [],
-    "origin": [["src/views/home/components/Footer.tsx", 42]],
+    "origin": [["src/views/home/components/Footer.tsx", 45]],
     "translation": "Conditions d'utilisation"
   },
   "NnH3pK": {
@@ -6159,7 +6169,7 @@
     "message": "Theme",
     "placeholders": {},
     "comments": [],
-    "origin": [["src/components/UserMenu.tsx", 131]],
+    "origin": [["src/components/UserMenu.tsx", 132]],
     "translation": "Thème"
   },
   "Yf9FAx": {
@@ -7235,7 +7245,7 @@
     "message": "Welcome back",
     "placeholders": {},
     "comments": [],
-    "origin": [["src/views/auth/login/index.tsx", 43]],
+    "origin": [["src/views/auth/login/index.tsx", 44]],
     "translation": "Bon retour"
   },
   "xEbBrW": {

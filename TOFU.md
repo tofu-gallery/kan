@@ -20,6 +20,8 @@ How Tofu runs it: Next.js + PostgreSQL. Tofu builds it on the Vercel lane; the m
 - `supabase/migrations/*.sql` (new): byte-for-byte copies of the 36 files in `packages/db/migrations/`, plus one file of Tofu's own, `20261023000000_TofuEnableRlsOnRemainingTables.sql`. It turns on row-level security for `workspace_slugs` and `user_board_favorites`, the only two upstream tables without it; otherwise the database's Data API, reachable with its public key, could read and change them. The app's own connection is not limited by row-level security (upstream already turns it on for every other table), so the app is not affected. Drizzle's journal (`packages/db/migrations/meta/_journal.json`) lists three groups in a different order from the file names (`AddIntegrationsTable`/`AddOnDeleteActionToUserDeletion`, `AddWorkspaceWebhooks` against the three files dated after it, `AddGitHubIntegrationSupport`/`AddIsArchivedToBoard`). None of those files touches what the others create, so both orders build the same schema. The originals and the journal are untouched.
 - `tooling/tofu-migrate.mjs` (new): applies `supabase/migrations` at the start of the build, in file-name order, each file once, and records each version in the Supabase CLI's own ledger (`supabase_migrations.schema_migrations`), so neither Tofu nor a person with the database key runs one twice. It needs `DATABASE_URL` and `SUPABASE_CA_CERT` and refuses to connect without verifying the server; with no `DATABASE_URL` it does nothing. Tofu applies `supabase/migrations` itself only when it can read the build, and the build command in `vercel.json` makes it leave them to the app. The script lives in `tooling/` because upstream's `.gitignore` ignores `scripts/`.
 - `vercel.json` (new): builds `apps/web` from the repository root, because the app needs the workspace packages beside it. It sets the `nextjs` framework, the output directory `apps/web/.next` and the build command `node tooling/tofu-migrate.mjs && pnpm --filter @kan/mcp build && pnpm --filter @kan/web build`, which runs `apps/web`'s own `build` script unchanged. It deliberately skips `turbo run build`, whose strict environment mode hides undeclared variables from the build. The install command is `pnpm install` with `NPM_CONFIG_NODE_LINKER=hoisted`, `NPM_CONFIG_SHAMEFULLY_HOIST=true`, `NPM_CONFIG_LINK_WORKSPACE_PACKAGES=true` and `NPM_CONFIG_HOIST=true` in front: upstream's `.npmrc` asks for a hoisted install, but Tofu never uploads `.npmrc` (it can hold registry credentials), and without these pnpm installs each package on its own and the build cannot resolve `@lingui/core`, the react-email subpackages or `@aws-sdk/client-s3`.
+- `apps/web/src/components/SourceCodeLink.tsx` (new), `apps/web/src/views/auth/login/index.tsx`, `apps/web/src/views/auth/signup/index.tsx`, `apps/web/src/components/UserMenu.tsx`, `apps/web/src/views/home/components/Footer.tsx` and `apps/web/src/env.ts`: links to this copy's own source code; see [Source code](#source-code-2026-10-24) below.
+- `apps/web/src/locales/*/messages.json` and `messages.ts`: the link's words, "Source code", in every language the app offers. `lingui extract` and `lingui compile` wrote them, as upstream's translation workflow does, except that the translations were typed in by hand (upstream's workflow has Lingo.dev write them), and `ptbr/messages.ts` got its one entry by hand: it is the Portuguese catalog the app loads, and `lingui compile` no longer writes it (the config compiles `pt-BR`). Without an entry, a production build shows the message's ID (`joolK7`) instead of the words.
 - `TOFU.md`: this file.
 
 Nothing else changed: no upstream SQL and no `turbo.json`. The Stripe code path is still there. It only loads with `NEXT_PUBLIC_KAN_ENV=cloud`, which a Tofu copy leaves unset.
@@ -39,6 +41,7 @@ Nothing else changed: no upstream SQL and no `turbo.json`. The Stripe code path 
 | `NEXT_PUBLIC_ALLOW_CREDENTIALS` | `true`: turns on email-and-password sign-in | public |
 | `NEXT_PUBLIC_DISABLE_EMAIL` | `true`: the copy has no email service yet | public |
 | `BETTER_AUTH_SECRET` | optional: a random string of 32 or more characters, e.g. from `openssl rand -base64 32`. Unset, the app derives one from `DATABASE_URL` (`apps/web/src/instrumentation.ts`) | secret: save it with *Hide this value after saving* |
+| `NEXT_PUBLIC_SOURCE_URL` | where this copy's source code is. Tofu's gallery sets it to the pinned commit; point it at your own source once you change the code (see [Source code](#source-code-2026-10-24)) | public |
 - `NEXT_PUBLIC_*` values are fixed when the app is built (they are written into `apps/web/public/__ENV.js`), so deploy again after changing one.
 - With email off there is no magic-link sign-in and no password-reset email, and people join a workspace through invite links instead of invitation emails.
 - Google sign-in runs through Kan's own Better Auth, not Tofu's sign-in broker, so it needs the owner's own Google OAuth client. Set `GOOGLE_CLIENT_ID` and `GOOGLE_CLIENT_SECRET` (secret), and give the client the authorised redirect URI `<NEXT_PUBLIC_BASE_URL>/api/auth/callback/google`.
@@ -48,6 +51,14 @@ Nothing else changed: no upstream SQL and no `turbo.json`. The Stripe code path 
   - `NEXT_PUBLIC_USE_STANDALONE_OUTPUT`: standalone output is for the Docker image, not Vercel.
   - `POSTGRES_URL`: ignored while `DATABASE_URL` is set.
 - Avatars and attachments need S3-compatible storage (`S3_*`, `NEXT_PUBLIC_STORAGE_*` and the bucket names). Without it those uploads do not work.
+
+## Source code (2026-10-24)
+
+AGPL-3.0 section 13 asks a changed copy that people use over a network to offer them its source code.
+
+- A **Source code** link opens `NEXT_PUBLIC_SOURCE_URL`. It sits at the foot of the sign-in and sign-up pages, where everyone who opens the copy sees it before signing in, and in the user menu for people who are signed in. The footer's GitHub links (on `/pricing`, `/privacy`, `/terms` and `/oss-friends`) and the user menu's version link (shown when `NEXT_PUBLIC_APP_VERSION` is set) open the same address instead of upstream's repository.
+- Tofu's app gallery saves `NEXT_PUBLIC_SOURCE_URL` as `https://github.com/tofu-gallery/kan/tree/<the pinned commit>` when it makes a copy, so the link opens exactly the code the copy runs. Unset, the links open this repository, `https://github.com/tofu-gallery/kan`.
+- An owner who changes the code must point `NEXT_PUBLIC_SOURCE_URL` at their own source, such as their own repository, and deploy again: like every `NEXT_PUBLIC_*` value, it is fixed when the app is built.
 
 ## Checked on Tofu (2026-10-23)
 
@@ -64,4 +75,4 @@ Not checked yet:
 
 ## Licence
 
-AGPL-3.0. Licence files and copyright notices stay as they are; every file Tofu changes carries a note saying so. Three kinds of file cannot carry one, and all are listed above: `vercel.json` and `package.json`, because JSON takes no comments, `pnpm-lock.yaml`, which is generated, and the SQL copies in `supabase/migrations/`, which are unmodified.
+AGPL-3.0. Licence files and copyright notices stay as they are; every file Tofu changes carries a note saying so. Three kinds of file cannot carry one, and all are listed above: `vercel.json`, `package.json` and the `messages.json` catalogs, because JSON takes no comments, `pnpm-lock.yaml` and the compiled `messages.ts` catalogs, which are generated, and the SQL copies in `supabase/migrations/`, which are unmodified.

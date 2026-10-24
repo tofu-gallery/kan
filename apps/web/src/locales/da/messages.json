@@ -944,7 +944,7 @@
     "origin": [
       [
         "src/views/home/components/Footer.tsx",
-        18
+        19
       ]
     ],
     "translation": "Alle systemer fungerer normalt"
@@ -984,7 +984,7 @@
       ],
       [
         "src/views/auth/signup/index.tsx",
-        90
+        94
       ]
     ],
     "translation": "Har du allerede en konto? <0><1>Log ind</1></0>"
@@ -1144,7 +1144,7 @@
     "origin": [
       [
         "src/views/home/components/Footer.tsx",
-        31
+        32
       ]
     ],
     "translation": "API-reference"
@@ -2560,11 +2560,11 @@
       ],
       [
         "src/views/auth/login/index.tsx",
-        43
+        44
       ],
       [
         "src/views/auth/signup/index.tsx",
-        71
+        75
       ]
     ],
     "translation": "Tjek din indbakke"
@@ -2688,11 +2688,11 @@
     "origin": [
       [
         "src/views/auth/login/index.tsx",
-        48
+        49
       ],
       [
         "src/views/auth/signup/index.tsx",
-        76
+        80
       ]
     ],
     "translation": "Klik på linket, vi har sendt til {magicLinkRecipient}, for at logge ind."
@@ -2804,7 +2804,7 @@
     "origin": [
       [
         "src/views/home/components/Footer.tsx",
-        95
+        98
       ]
     ],
     "translation": "Virksomhed"
@@ -2989,7 +2989,7 @@
     "origin": [
       [
         "src/views/home/components/Footer.tsx",
-        38
+        41
       ],
       [
         "src/views/home/components/Header.tsx",
@@ -3649,7 +3649,7 @@
     "origin": [
       [
         "src/components/UserMenu.tsx",
-        158
+        159
       ]
     ],
     "translation": "Mørk"
@@ -4073,7 +4073,7 @@
     "origin": [
       [
         "src/components/UserMenu.tsx",
-        209
+        210
       ],
       [
         "src/views/boards/components/TemplateBoards.tsx",
@@ -4089,7 +4089,7 @@
       ],
       [
         "src/views/home/components/Footer.tsx",
-        78
+        81
       ],
       [
         "src/views/home/components/Header.tsx",
@@ -4105,7 +4105,7 @@
     "origin": [
       [
         "src/views/auth/login/index.tsx",
-        63
+        64
       ]
     ],
     "translation": "Har du ikke en konto? <0><1>Opret konto</1></0>"
@@ -5070,7 +5070,7 @@
       ],
       [
         "src/views/home/components/Footer.tsx",
-        52
+        55
       ]
     ],
     "translation": "Ofte stillede spørgsmål"
@@ -5118,7 +5118,7 @@
       ],
       [
         "src/views/home/components/Footer.tsx",
-        50
+        53
       ],
       [
         "src/views/home/components/Header.tsx",
@@ -5142,7 +5142,7 @@
       ],
       [
         "src/components/UserMenu.tsx",
-        217
+        232
       ]
     ],
     "translation": "Feedback"
@@ -5362,7 +5362,7 @@
     "origin": [
       [
         "src/views/auth/signup/index.tsx",
-        71
+        75
       ],
       [
         "src/views/home/components/Cta.tsx",
@@ -5470,7 +5470,7 @@
     "origin": [
       [
         "src/views/home/components/Footer.tsx",
-        25
+        26
       ]
     ],
     "translation": "Kom godt i gang"
@@ -5482,7 +5482,7 @@
     "origin": [
       [
         "src/views/home/components/Footer.tsx",
-        37
+        40
       ],
       [
         "src/views/settings/IntegrationsSettings.tsx",
@@ -5914,7 +5914,7 @@
     "origin": [
       [
         "src/views/home/components/Footer.tsx",
-        27
+        28
       ]
     ],
     "translation": "Importerer fra Trello"
@@ -6400,7 +6400,7 @@
     "origin": [
       [
         "src/views/home/components/Footer.tsx",
-        131
+        134
       ]
     ],
     "translation": "Juridisk"
@@ -6412,7 +6412,7 @@
     "origin": [
       [
         "src/views/home/components/Footer.tsx",
-        45
+        48
       ]
     ],
     "translation": "Licens"
@@ -6448,7 +6448,7 @@
     "origin": [
       [
         "src/components/UserMenu.tsx",
-        172
+        173
       ]
     ],
     "translation": "Lys"
@@ -6592,7 +6592,7 @@
     "origin": [
       [
         "src/views/auth/login/index.tsx",
-        33
+        34
       ]
     ],
     "translation": "Login | kan.bn"
@@ -6604,7 +6604,7 @@
     "origin": [
       [
         "src/components/UserMenu.tsx",
-        227
+        242
       ]
     ],
     "translation": "Log ud"
@@ -7647,7 +7647,7 @@
     "origin": [
       [
         "src/views/home/components/Footer.tsx",
-        39
+        42
       ],
       [
         "src/views/oss-friends/index.tsx",
@@ -8395,7 +8395,7 @@
     "origin": [
       [
         "src/views/home/components/Footer.tsx",
-        51
+        54
       ],
       [
         "src/views/home/components/Header.tsx",
@@ -8447,7 +8447,7 @@
     "origin": [
       [
         "src/views/home/components/Footer.tsx",
-        43
+        46
       ]
     ],
     "translation": "Privatlivspolitik"
@@ -8899,7 +8899,7 @@
     "origin": [
       [
         "src/views/home/components/Footer.tsx",
-        114
+        117
       ]
     ],
     "translation": "Ressourcer"
@@ -8923,7 +8923,7 @@
     "origin": [
       [
         "src/views/home/components/Footer.tsx",
-        36
+        37
       ],
       [
         "src/views/home/components/Header.tsx",
@@ -9504,7 +9504,7 @@
     "origin": [
       [
         "src/components/UserMenu.tsx",
-        187
+        188
       ]
     ],
     "translation": "Genveje"
@@ -9596,11 +9596,11 @@
     "origin": [
       [
         "src/views/auth/signup/index.tsx",
-        36
+        37
       ],
       [
         "src/views/auth/signup/index.tsx",
-        61
+        65
       ]
     ],
     "translation": "Opret konto | kan.bn"
@@ -9612,7 +9612,7 @@
     "origin": [
       [
         "src/views/auth/signup/index.tsx",
-        46
+        47
       ]
     ],
     "translation": "Oprettelse af konto deaktiveret"
@@ -9624,7 +9624,7 @@
     "origin": [
       [
         "src/views/auth/signup/index.tsx",
-        49
+        50
       ]
     ],
     "translation": "Oprettelse af konto er midlertidigt deaktiveret. Prøv igen senere."
@@ -9764,6 +9764,22 @@
       ]
     ],
     "translation": "Noget gik galt under aktiveringen af licensen."
+  },
+  "joolK7": {
+    "translation": "Kildekode",
+    "message": "Source code",
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/components/SourceCodeLink.tsx",
+        26
+      ],
+      [
+        "src/components/UserMenu.tsx",
+        224
+      ]
+    ]
   },
   "vnS6Rf": {
     "message": "SSO",
@@ -9942,7 +9958,7 @@
     "origin": [
       [
         "src/components/UserMenu.tsx",
-        198
+        199
       ],
       [
         "src/views/pricing/components/FeatureComparisonTable.tsx",
@@ -9970,7 +9986,7 @@
     "origin": [
       [
         "src/components/UserMenu.tsx",
-        144
+        145
       ]
     ],
     "translation": "System"
@@ -10122,7 +10138,7 @@
     "origin": [
       [
         "src/views/home/components/Footer.tsx",
-        42
+        45
       ]
     ],
     "translation": "Servicevilkår"
@@ -10393,7 +10409,7 @@
     "origin": [
       [
         "src/components/UserMenu.tsx",
-        131
+        132
       ]
     ],
     "translation": "Tema"
@@ -12153,7 +12169,7 @@
     "origin": [
       [
         "src/views/auth/login/index.tsx",
-        43
+        44
       ]
     ],
     "translation": "Velkommen tilbage"

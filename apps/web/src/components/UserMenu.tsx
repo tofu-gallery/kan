@@ -9,6 +9,7 @@ import { twMerge } from "tailwind-merge";
 
 import { authClient } from "@kan/auth/client";
 
+import { getSourceUrl } from "~/components/SourceCodeLink";
 import { env } from "~/env";
 import { useIsMobile } from "~/hooks/useMediaQuery";
 import { useKeyboardShortcuts } from "~/providers/keyboard-shortcuts";
@@ -209,6 +210,20 @@ export default function UserMenu({
                   {t`Documentation`}
                 </Link>
               </Menu.Item>
+              {/* Tofu changed this (2026-10-24): signed-in people can open this copy's source code, which AGPL-3.0
+                  section 13 asks a changed copy to offer (~/components/SourceCodeLink). The version below opens the
+                  same address instead of upstream's commit or release. */}
+              <Menu.Item>
+                <Link
+                  href={getSourceUrl()}
+                  target="_blank"
+                  rel="noreferrer"
+                  onClick={handleLinkClick}
+                  className="flex w-full items-center rounded-[5px] px-3 py-2 text-left text-xs hover:bg-light-200 dark:hover:bg-dark-400"
+                >
+                  {t`Source code`}
+                </Link>
+              </Menu.Item>
               <Menu.Item>
                 <button
                   onClick={() => handleModalOpen("NEW_FEEDBACK")}
@@ -232,11 +247,7 @@ export default function UserMenu({
               <div className="light-border-600 border-t-[1px] p-1 dark:border-dark-600">
                 <Menu.Item>
                   <Link
-                    href={
-                      env.NEXT_PUBLIC_APP_VERSION.includes("+")
-                        ? `https://github.com/kanbn/kan/commit/${env.NEXT_PUBLIC_APP_VERSION.split("+")[1]}`
-                        : `https://github.com/kanbn/kan/releases/tag/v${env.NEXT_PUBLIC_APP_VERSION}`
-                    }
+                    href={getSourceUrl()}
                     target="_blank"
                     rel="noreferrer"
                     onClick={handleLinkClick}

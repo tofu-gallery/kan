@@ -10,6 +10,7 @@ import { authClient } from "@kan/auth/client";
 import { Auth } from "~/components/AuthForm";
 import { PageHead } from "~/components/PageHead";
 import PatternedBackground from "~/components/PatternedBackground";
+import { SourceCodeLink } from "~/components/SourceCodeLink";
 
 export default function LoginPage() {
   const router = useRouter();
@@ -72,6 +73,9 @@ export default function LoginPage() {
                 </Trans>
               </p>
             )}
+            {/* Tofu changed this (2026-10-24): everyone who opens this page can open this copy's source code, which
+                AGPL-3.0 section 13 asks a changed copy to offer (~/components/SourceCodeLink). */}
+            <SourceCodeLink />
           </div>
           <PatternedBackground />
         </div>

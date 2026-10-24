@@ -944,7 +944,7 @@
     "origin": [
       [
         "src/views/home/components/Footer.tsx",
-        18
+        19
       ]
     ],
     "translation": "All systems operational"
@@ -984,7 +984,7 @@
       ],
       [
         "src/views/auth/signup/index.tsx",
-        90
+        94
       ]
     ],
     "translation": "Already have an account? <0><1>Sign in</1></0>"
@@ -1144,7 +1144,7 @@
     "origin": [
       [
         "src/views/home/components/Footer.tsx",
-        31
+        32
       ]
     ],
     "translation": "API Reference"
@@ -2560,11 +2560,11 @@
       ],
       [
         "src/views/auth/login/index.tsx",
-        43
+        44
       ],
       [
         "src/views/auth/signup/index.tsx",
-        71
+        75
       ]
     ],
     "translation": "Check your inbox"
@@ -2688,11 +2688,11 @@
     "origin": [
       [
         "src/views/auth/login/index.tsx",
-        48
+        49
       ],
       [
         "src/views/auth/signup/index.tsx",
-        76
+        80
       ]
     ],
     "translation": "Click on the link we've sent to {magicLinkRecipient} to sign in."
@@ -2804,7 +2804,7 @@
     "origin": [
       [
         "src/views/home/components/Footer.tsx",
-        95
+        98
       ]
     ],
     "translation": "Company"
@@ -3002,7 +3002,7 @@
     "origin": [
       [
         "src/views/home/components/Footer.tsx",
-        38
+        41
       ],
       [
         "src/views/home/components/Header.tsx",
@@ -3675,7 +3675,7 @@
     "origin": [
       [
         "src/components/UserMenu.tsx",
-        158
+        159
       ]
     ],
     "translation": "Dark"
@@ -4112,7 +4112,7 @@
     "origin": [
       [
         "src/components/UserMenu.tsx",
-        209
+        210
       ],
       [
         "src/views/boards/components/TemplateBoards.tsx",
@@ -4128,7 +4128,7 @@
       ],
       [
         "src/views/home/components/Footer.tsx",
-        78
+        81
       ],
       [
         "src/views/home/components/Header.tsx",
@@ -4144,7 +4144,7 @@
     "origin": [
       [
         "src/views/auth/login/index.tsx",
-        63
+        64
       ]
     ],
     "translation": "Don't have an account? <0><1>Sign up</1></0>"
@@ -5122,7 +5122,7 @@
       ],
       [
         "src/views/home/components/Footer.tsx",
-        52
+        55
       ]
     ],
     "translation": "FAQs"
@@ -5170,7 +5170,7 @@
       ],
       [
         "src/views/home/components/Footer.tsx",
-        50
+        53
       ],
       [
         "src/views/home/components/Header.tsx",
@@ -5194,7 +5194,7 @@
       ],
       [
         "src/components/UserMenu.tsx",
-        217
+        232
       ]
     ],
     "translation": "Feedback"
@@ -5414,7 +5414,7 @@
     "origin": [
       [
         "src/views/auth/signup/index.tsx",
-        71
+        75
       ],
       [
         "src/views/home/components/Cta.tsx",
@@ -5522,7 +5522,7 @@
     "origin": [
       [
         "src/views/home/components/Footer.tsx",
-        25
+        26
       ]
     ],
     "translation": "Getting started"
@@ -5534,7 +5534,7 @@
     "origin": [
       [
         "src/views/home/components/Footer.tsx",
-        37
+        40
       ],
       [
         "src/views/settings/IntegrationsSettings.tsx",
@@ -5966,7 +5966,7 @@
     "origin": [
       [
         "src/views/home/components/Footer.tsx",
-        27
+        28
       ]
     ],
     "translation": "Importing from Trello"
@@ -6478,7 +6478,7 @@
     "origin": [
       [
         "src/views/home/components/Footer.tsx",
-        131
+        134
       ]
     ],
     "translation": "Legal"
@@ -6490,7 +6490,7 @@
     "origin": [
       [
         "src/views/home/components/Footer.tsx",
-        45
+        48
       ]
     ],
     "translation": "License"
@@ -6526,7 +6526,7 @@
     "origin": [
       [
         "src/components/UserMenu.tsx",
-        172
+        173
       ]
     ],
     "translation": "Light"
@@ -6670,7 +6670,7 @@
     "origin": [
       [
         "src/views/auth/login/index.tsx",
-        33
+        34
       ]
     ],
     "translation": "Login | kan.bn"
@@ -6682,7 +6682,7 @@
     "origin": [
       [
         "src/components/UserMenu.tsx",
-        227
+        242
       ]
     ],
     "translation": "Logout"
@@ -7725,7 +7725,7 @@
     "origin": [
       [
         "src/views/home/components/Footer.tsx",
-        39
+        42
       ],
       [
         "src/views/oss-friends/index.tsx",
@@ -8473,7 +8473,7 @@
     "origin": [
       [
         "src/views/home/components/Footer.tsx",
-        51
+        54
       ],
       [
         "src/views/home/components/Header.tsx",
@@ -8525,7 +8525,7 @@
     "origin": [
       [
         "src/views/home/components/Footer.tsx",
-        43
+        46
       ]
     ],
     "translation": "Privacy policy"
@@ -8977,7 +8977,7 @@
     "origin": [
       [
         "src/views/home/components/Footer.tsx",
-        114
+        117
       ]
     ],
     "translation": "Resources"
@@ -9001,7 +9001,7 @@
     "origin": [
       [
         "src/views/home/components/Footer.tsx",
-        36
+        37
       ],
       [
         "src/views/home/components/Header.tsx",
@@ -9582,7 +9582,7 @@
     "origin": [
       [
         "src/components/UserMenu.tsx",
-        187
+        188
       ]
     ],
     "translation": "Shortcuts"
@@ -9674,11 +9674,11 @@
     "origin": [
       [
         "src/views/auth/signup/index.tsx",
-        36
+        37
       ],
       [
         "src/views/auth/signup/index.tsx",
-        61
+        65
       ]
     ],
     "translation": "Sign up | kan.bn"
@@ -9690,7 +9690,7 @@
     "origin": [
       [
         "src/views/auth/signup/index.tsx",
-        46
+        47
       ]
     ],
     "translation": "Sign up disabled"
@@ -9702,7 +9702,7 @@
     "origin": [
       [
         "src/views/auth/signup/index.tsx",
-        49
+        50
       ]
     ],
     "translation": "Sign up is currently disabled. Please try again later."
@@ -9842,6 +9842,22 @@
       ]
     ],
     "translation": "Something went wrong during license activation."
+  },
+  "joolK7": {
+    "translation": "Source code",
+    "message": "Source code",
+    "placeholders": {},
+    "comments": [],
+    "origin": [
+      [
+        "src/components/SourceCodeLink.tsx",
+        26
+      ],
+      [
+        "src/components/UserMenu.tsx",
+        224
+      ]
+    ]
   },
   "vnS6Rf": {
     "message": "SSO",
@@ -10020,7 +10036,7 @@
     "origin": [
       [
         "src/components/UserMenu.tsx",
-        198
+        199
       ],
       [
         "src/views/pricing/components/FeatureComparisonTable.tsx",
@@ -10048,7 +10064,7 @@
     "origin": [
       [
         "src/components/UserMenu.tsx",
-        144
+        145
       ]
     ],
     "translation": "System"
@@ -10200,7 +10216,7 @@
     "origin": [
       [
         "src/views/home/components/Footer.tsx",
-        42
+        45
       ]
     ],
     "translation": "Terms of service"
@@ -10471,7 +10487,7 @@
     "origin": [
       [
         "src/components/UserMenu.tsx",
-        131
+        132
       ]
     ],
     "translation": "Theme"
@@ -12261,7 +12277,7 @@
     "origin": [
       [
         "src/views/auth/login/index.tsx",
-        43
+        44
       ]
     ],
     "translation": "Welcome back"

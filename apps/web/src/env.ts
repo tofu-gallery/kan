@@ -104,6 +104,9 @@ export const env = createEnv({
       )
       .optional(),
     NEXT_PUBLIC_APP_VERSION: z.string().optional(),
+    // Tofu changed this (2026-10-24): where this copy's source code is, opened by its "Source code" links
+    // (~/components/SourceCodeLink). Unset, they open Tofu's fork of Kan.
+    NEXT_PUBLIC_SOURCE_URL: z.string().url().optional(),
     NEXT_PUBLIC_ALLOW_CREDENTIALS: z
       .string()
       .transform((s) => (s === "" ? undefined : s))
@@ -144,6 +147,7 @@ export const env = createEnv({
     NEXT_PUBLIC_USE_VIRTUAL_HOSTED_URLS:
       process.env.NEXT_PUBLIC_USE_VIRTUAL_HOSTED_URLS,
     NEXT_PUBLIC_APP_VERSION: process.env.NEXT_PUBLIC_APP_VERSION,
+    NEXT_PUBLIC_SOURCE_URL: process.env.NEXT_PUBLIC_SOURCE_URL,
     NEXT_PUBLIC_ALLOW_CREDENTIALS: process.env.NEXT_PUBLIC_ALLOW_CREDENTIALS,
     NEXT_PUBLIC_DISABLE_SIGN_UP: process.env.NEXT_PUBLIC_DISABLE_SIGN_UP,
     NEXT_PUBLIC_USE_STANDALONE_OUTPUT:

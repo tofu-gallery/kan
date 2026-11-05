@@ -5,7 +5,11 @@ import { uuid_ossp } from "@electric-sql/pglite/contrib/uuid_ossp";
 import { drizzle as drizzlePg } from "drizzle-orm/node-postgres";
 import { Pool } from "pg";
 
+import { createLogger } from "@kan/logger";
+
 import * as schema from "./schema";
+
+const log = createLogger("db");
 
 // Still used by the PGlite databases in packages/api/integration-tests.
 export const pgliteExtensions = { pg_trgm, uuid_ossp };
@@ -72,6 +76,9 @@ export const createDrizzleClient = (): dbClient => {
   }
 
   const pool = new Pool(toPoolConfig(databaseUrl));
+  // Upstream (2026-11-05): idle connections error when Postgres restarts; without a listener that crashes the process.
+  // The pool drops the dead client and reconnects on the next query.
+  pool.on("error", (err) => log.error({ err }, "Postgres pool error"));
 
   return drizzlePg(pool, { schema }) as dbClient;
 };
